@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
 .sidebar-class{
     width: 225px;
-    height: 880px;
+    height: 90%;
+    overflow: hidden;
     background-color: rgba(246, 246, 246, 0.959);
     transition-property: width;
     transition-duration: 0.3s;
@@ -14,13 +22,16 @@
 
 .sidebarCollapse{
     width: 45px;
-    height: 880px;
+    height: 90%;
+    overflow: hidden;
     background-color: rgba(246, 246, 246, 0.959);
     transition-property: width;
     transition-duration: 0.3s;
 }
 
 .btns{
+    position: sticky;
+    bottom: 0;
     padding: 10px;
     width: 225px;
     background-color: rgba(246, 246, 246, 0.959);
@@ -32,6 +43,8 @@
 }
 
 .btnCollapese{
+    position: sticky;
+    bottom: 0;
     padding: 10px;
     width: 45px;
     background-color: rgba(246, 246, 246, 0.959);

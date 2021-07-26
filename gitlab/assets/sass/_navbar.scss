@@ -1,5 +1,4 @@
 .custom-h-cf{
-    width: 100%;
     height: 40px;
     background-color: #292961;
     .custom-h-col1{
@@ -33,6 +32,10 @@
     .custom-h-col2{
         .label-search{
             position: relative;
+           &:hover{
+               fill: black;
+           }
+            
             .search-icon{
                 position: absolute;
                 top: 6px;
@@ -42,7 +45,7 @@
         }
         .custom-c2-input{
             width: 250px;
-            height: 30px;
+            height: 32px;
             outline: none;
             border: none;
             border-radius: 3px;
@@ -55,6 +58,38 @@
                 background-color: rgb(247, 248, 251);
             }
         }
+
+        .left-q-i{
+            padding: 5px;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin-left: 10px;
+            border-radius: 6px;
+            &:hover{
+                background-color:rgba(251, 247, 247, 0.123) ;   
+            }
+            .question-icon{
+                fill: white;
+                margin-bottom: 2px;
+            }
+           
+        }
+
+        .btn-sign-in{
+            margin-left: 10px;
+            color: black;
+            background-color: #fff;
+            padding:2px 12px 2px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 2px solid #fff;
+
+            &:hover{
+                border: 2px solid gray;
+            }
+        }
+
+       
 
     }
 }

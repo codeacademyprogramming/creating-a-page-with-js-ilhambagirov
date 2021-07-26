@@ -3,21 +3,31 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
 .sidebar-class {
   width: 225px;
-  height: 880px;
+  height: 90%;
+  overflow: hidden;
   background-color: rgba(246, 246, 246, 0.959);
   transition-property: width;
   transition-duration: 0.3s; }
 
 .sidebarCollapse {
   width: 45px;
-  height: 880px;
+  height: 90%;
+  overflow: hidden;
   background-color: rgba(246, 246, 246, 0.959);
   transition-property: width;
   transition-duration: 0.3s; }
 
 .btns {
+  position: sticky;
+  bottom: 0;
   padding: 10px;
   width: 225px;
   background-color: rgba(246, 246, 246, 0.959);
@@ -28,6 +38,8 @@
   transition-duration: 0.3s; }
 
 .btnCollapese {
+  position: sticky;
+  bottom: 0;
   padding: 10px;
   width: 45px;
   background-color: rgba(246, 246, 246, 0.959);
@@ -64,7 +76,6 @@ ul li svg {
   margin-left: 3px; }
 
 .custom-h-cf {
-  width: 100%;
   height: 40px;
   background-color: #292961; }
   .custom-h-cf .custom-h-col1 {
@@ -89,6 +100,8 @@ ul li svg {
         cursor: pointer; }
   .custom-h-cf .custom-h-col2 .label-search {
     position: relative; }
+    .custom-h-cf .custom-h-col2 .label-search:hover {
+      fill: black; }
     .custom-h-cf .custom-h-col2 .label-search .search-icon {
       position: absolute;
       top: 6px;
@@ -96,7 +109,7 @@ ul li svg {
       z-index: 1; }
   .custom-h-cf .custom-h-col2 .custom-c2-input {
     width: 250px;
-    height: 30px;
+    height: 32px;
     outline: none;
     border: none;
     border-radius: 3px;
@@ -106,3 +119,24 @@ ul li svg {
       background-color: rgba(247, 248, 251, 0.267); }
     .custom-h-cf .custom-h-col2 .custom-c2-input:focus {
       background-color: #f7f8fb; }
+  .custom-h-cf .custom-h-col2 .left-q-i {
+    padding: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 10px;
+    border-radius: 6px; }
+    .custom-h-cf .custom-h-col2 .left-q-i:hover {
+      background-color: rgba(251, 247, 247, 0.123); }
+    .custom-h-cf .custom-h-col2 .left-q-i .question-icon {
+      fill: white;
+      margin-bottom: 2px; }
+  .custom-h-cf .custom-h-col2 .btn-sign-in {
+    margin-left: 10px;
+    color: black;
+    background-color: #fff;
+    padding: 2px 12px 2px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #fff; }
+    .custom-h-cf .custom-h-col2 .btn-sign-in:hover {
+      border: 2px solid gray; }
