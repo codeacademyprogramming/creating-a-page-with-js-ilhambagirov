@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.sidebar-class {
+  width: 225px;
+  height: 880px;
+  background-color: rgba(246, 246, 246, 0.959);
+  transition-property: width;
+  transition-duration: 0.3s; }
+
+.sidebarCollapse {
+  width: 45px;
+  height: 880px;
+  background-color: rgba(246, 246, 246, 0.959);
+  transition-property: width;
+  transition-duration: 0.3s; }
+
+.btns {
+  padding: 10px;
+  width: 225px;
+  background-color: rgba(246, 246, 246, 0.959);
+  border: none;
+  outline: none;
+  border-top: 0.1rem solid #ccc8c8;
+  transition-property: width;
+  transition-duration: 0.3s; }
+
+.btnCollapese {
+  padding: 10px;
+  width: 45px;
+  background-color: rgba(246, 246, 246, 0.959);
+  border: none;
+  outline: none;
+  border-top: 0.1rem solid #ccc8c8;
+  transition-property: width;
+  transition-duration: 0.3s; }
+
+ul li {
+  display: flex;
+  padding-left: 10px;
+  margin: 2px; }
+
+ul li svg {
+  vertical-align: -webkit-baseline-middle; }
+
+.sidebar-class li,
+.sidebarCollapse li {
+  height: 34px;
+  cursor: pointer; }
+
+.sidebar-class li:hover,
+.sidebarCollapse li:hover {
+  background-color: rgba(224, 219, 219, 0.452);
+  border-radius: 5px; }
+
+.btns:hover,
+.btnCollapese:hover {
+  background-color: rgba(224, 219, 219, 0.452); }
+
+.marginl {
+  padding: 5px;
+  margin-left: 3px; }
+
+.custom-h-cf {
+  width: 100%;
+  height: 40px;
+  background-color: #292961; }
+  .custom-h-cf .custom-h-col1 {
+    height: 35px;
+    padding-top: 3px;
+    padding-bottom: 2px; }
+    .custom-h-cf .custom-h-col1 .wrapper-logo-g {
+      padding-right: 10px; }
+      .custom-h-cf .custom-h-col1 .wrapper-logo-g:hover {
+        background-color: rgba(251, 247, 247, 0.123);
+        border-radius: 5px;
+        cursor: pointer; }
+    .custom-h-cf .custom-h-col1 .tanuki-logo {
+      margin-right: 5px; }
+    .custom-h-cf .custom-h-col1 .custom-menu {
+      margin-left: 22px;
+      padding-top: 3px;
+      padding-bottom: 4px; }
+      .custom-h-cf .custom-h-col1 .custom-menu:hover {
+        background-color: rgba(251, 247, 247, 0.123);
+        border-radius: 5px;
+        cursor: pointer; }
+  .custom-h-cf .custom-h-col2 .label-search {
+    position: relative; }
+    .custom-h-cf .custom-h-col2 .label-search .search-icon {
+      position: absolute;
+      top: 6px;
+      left: 220px;
+      z-index: 1; }
+  .custom-h-cf .custom-h-col2 .custom-c2-input {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 2px; }
+    .custom-h-cf .custom-h-col2 .custom-c2-input:hover {
+      background-color: rgba(247, 248, 251, 0.267); }
+    .custom-h-cf .custom-h-col2 .custom-c2-input:focus {
+      background-color: #f7f8fb; }

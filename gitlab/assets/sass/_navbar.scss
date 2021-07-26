@@ -1,0 +1,61 @@
+.custom-h-cf{
+    width: 100%;
+    height: 40px;
+    background-color: #292961;
+    .custom-h-col1{
+        height: 35px;
+        padding-top: 3px;
+        padding-bottom: 2px;
+
+        .wrapper-logo-g{
+            padding-right: 10px;
+             &:hover{
+            background-color: rgba(251, 247, 247, 0.123);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        }
+        .tanuki-logo{
+        margin-right: 5px;
+        }
+        .custom-menu{
+        margin-left: 22px;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        &:hover{
+            background-color: rgba(251, 247, 247, 0.123);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        }
+    }
+
+    .custom-h-col2{
+        .label-search{
+            position: relative;
+            .search-icon{
+                position: absolute;
+                top: 6px;
+                left: 220px;
+                z-index: 1;
+            }
+        }
+        .custom-c2-input{
+            width: 250px;
+            height: 30px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.178);
+            padding: 2px;
+            &:hover{
+                background-color: rgba(247, 248, 251, 0.267);
+            }
+            &:focus{
+                background-color: rgb(247, 248, 251);
+            }
+        }
+
+    }
+}
+

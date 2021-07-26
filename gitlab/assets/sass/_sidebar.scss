@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-class{
+    width: 225px;
+    height: 880px;
+    background-color: rgba(246, 246, 246, 0.959);
+    transition-property: width;
+    transition-duration: 0.3s;
+}
+
+.sidebarCollapse{
+    width: 45px;
+    height: 880px;
+    background-color: rgba(246, 246, 246, 0.959);
+    transition-property: width;
+    transition-duration: 0.3s;
+}
+
+.btns{
+    padding: 10px;
+    width: 225px;
+    background-color: rgba(246, 246, 246, 0.959);
+    border: none;
+    outline: none;
+    border-top: 0.1rem solid rgb(204, 200, 200);
+    transition-property: width;
+    transition-duration: 0.3s;
+}
+
+.btnCollapese{
+    padding: 10px;
+    width: 45px;
+    background-color: rgba(246, 246, 246, 0.959);
+    border: none;
+    outline: none;
+    border-top: 0.1rem solid rgb(204, 200, 200);
+    transition-property: width;
+    transition-duration: 0.3s;
+}
+
+ul li{
+    display: flex;
+    padding-left: 10px;
+    margin: 2px;
+}
+ul li svg{
+    vertical-align: -webkit-baseline-middle;
+}
+.sidebar-class li,
+.sidebarCollapse li{
+    height: 34px;
+    cursor: pointer;
+    
+}
+
+.sidebar-class li:hover,
+.sidebarCollapse li:hover
+{
+    background-color: rgba(224, 219, 219, 0.452);
+    border-radius: 5px;
+}
+.btns:hover,
+.btnCollapese:hover{
+    background-color: rgba(224, 219, 219, 0.452);
+}
+
+.marginl{
+    padding: 5px;
+    margin-left: 3px;
+}
