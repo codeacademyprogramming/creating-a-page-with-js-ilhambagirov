@@ -10,10 +10,19 @@ html{
 body{
     height: 100%;
 }
-
-.sidebar-class{
+.sideb{
+    position: static;
+    display: block;
     width: 225px;
-    height: 90%;
+    height: 100vh;
+}
+.sidebar-class{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    width: 213px;
+    height: 100%;
     overflow: hidden;
     background-color: rgba(246, 246, 246, 0.959);
     transition-property: width;
@@ -21,8 +30,12 @@ body{
 }
 
 .sidebarCollapse{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 40px;
     width: 45px;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     background-color: rgba(246, 246, 246, 0.959);
     transition-property: width;
@@ -30,10 +43,11 @@ body{
 }
 
 .btns{
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
     padding: 10px;
-    width: 225px;
+    width: 213px;
     background-color: rgba(246, 246, 246, 0.959);
     border: none;
     outline: none;
@@ -43,8 +57,9 @@ body{
 }
 
 .btnCollapese{
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
     padding: 10px;
     width: 45px;
     background-color: rgba(246, 246, 246, 0.959);
@@ -85,3 +100,123 @@ ul li svg{
     padding: 5px;
     margin-left: 3px;
 }
+//data uls
+
+.customtarget{
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+}
+
+[data-target=project]{
+    position: fixed;
+    bottom: 730px;
+    left: 230px;
+}
+[data-target=repository]{
+    position: fixed;
+    bottom: 520px;
+    left: 230px;
+}
+
+[data-target=issues]{
+    position: fixed;
+    bottom: 590px;
+    left: 230px;
+}
+
+[data-target=ci]{
+    position: fixed;
+    bottom: 515px;
+    left: 230px;
+}
+
+[data-target=deployments]{
+    position: fixed;
+    bottom: 550px;
+    left: 230px;
+}
+
+
+[data-target=monitor]{
+    position: fixed;
+    bottom: 550px;
+    left: 230px;
+}
+
+[data-target=package]{
+    width: 190px;
+    position: fixed;
+    bottom: 445px;
+    left: 230px;
+}
+[data-target=analytics]{
+    position: fixed;
+    bottom: 300px;
+    left: 230px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .customtarget{
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    background-color: #fff;
+}
+    [data-target=project]{
+        position: fixed;
+        bottom: 785px;
+        left: 50px;
+    }
+    [data-target=repository]{
+        position: fixed;
+        bottom: 570px;
+        left: 50px;
+    }
+    
+    [data-target=issues]{
+        position: fixed;
+        bottom: 645px;
+        left: 50px;
+    }
+    
+    [data-target=ci]{
+        position: fixed;
+        bottom: 570px;
+        left: 50px;
+    }
+    
+    [data-target=deployments]{
+        position: fixed;
+        bottom: 608px;
+        left: 50px;
+    }
+    
+    
+    [data-target=monitor]{
+        position: fixed;
+        bottom: 608px;
+        left: 50px;
+    }
+    
+    [data-target=package]{
+        width: 190px;
+        position: fixed;
+        bottom: 500px;
+        left: 50px;
+    }
+    [data-target=analytics]{
+        position: fixed;
+        bottom: 355px;
+        left: 50px;
+    }
+    
+}
+
+
+    

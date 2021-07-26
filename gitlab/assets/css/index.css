@@ -9,27 +9,42 @@ html {
 body {
   height: 100%; }
 
-.sidebar-class {
+.sideb {
+  position: static;
+  display: block;
   width: 225px;
-  height: 90%;
+  height: 100vh; }
+
+.sidebar-class {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 40px;
+  width: 213px;
+  height: 100%;
   overflow: hidden;
   background-color: rgba(246, 246, 246, 0.959);
   transition-property: width;
   transition-duration: 0.3s; }
 
 .sidebarCollapse {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 40px;
   width: 45px;
-  height: 90%;
+  height: 100%;
   overflow: hidden;
   background-color: rgba(246, 246, 246, 0.959);
   transition-property: width;
   transition-duration: 0.3s; }
 
 .btns {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
   padding: 10px;
-  width: 225px;
+  width: 213px;
   background-color: rgba(246, 246, 246, 0.959);
   border: none;
   outline: none;
@@ -38,8 +53,9 @@ body {
   transition-duration: 0.3s; }
 
 .btnCollapese {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
   padding: 10px;
   width: 45px;
   background-color: rgba(246, 246, 246, 0.959);
@@ -75,7 +91,99 @@ ul li svg {
   padding: 5px;
   margin-left: 3px; }
 
+.customtarget {
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #d3d2d2;
+  border-radius: 5px; }
+
+[data-target=project] {
+  position: fixed;
+  bottom: 730px;
+  left: 230px; }
+
+[data-target=repository] {
+  position: fixed;
+  bottom: 520px;
+  left: 230px; }
+
+[data-target=issues] {
+  position: fixed;
+  bottom: 590px;
+  left: 230px; }
+
+[data-target=ci] {
+  position: fixed;
+  bottom: 515px;
+  left: 230px; }
+
+[data-target=deployments] {
+  position: fixed;
+  bottom: 550px;
+  left: 230px; }
+
+[data-target=monitor] {
+  position: fixed;
+  bottom: 550px;
+  left: 230px; }
+
+[data-target=package] {
+  width: 190px;
+  position: fixed;
+  bottom: 445px;
+  left: 230px; }
+
+[data-target=analytics] {
+  position: fixed;
+  bottom: 300px;
+  left: 230px; }
+
+@media screen and (max-width: 1200px) {
+  .customtarget {
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid #d3d2d2;
+    border-radius: 5px;
+    background-color: #fff; }
+  [data-target=project] {
+    position: fixed;
+    bottom: 785px;
+    left: 50px; }
+  [data-target=repository] {
+    position: fixed;
+    bottom: 570px;
+    left: 50px; }
+  [data-target=issues] {
+    position: fixed;
+    bottom: 645px;
+    left: 50px; }
+  [data-target=ci] {
+    position: fixed;
+    bottom: 570px;
+    left: 50px; }
+  [data-target=deployments] {
+    position: fixed;
+    bottom: 608px;
+    left: 50px; }
+  [data-target=monitor] {
+    position: fixed;
+    bottom: 608px;
+    left: 50px; }
+  [data-target=package] {
+    width: 190px;
+    position: fixed;
+    bottom: 500px;
+    left: 50px; }
+  [data-target=analytics] {
+    position: fixed;
+    bottom: 355px;
+    left: 50px; } }
+
 .custom-h-cf {
+  position: fixed;
+  top: 0;
   height: 40px;
   background-color: #292961; }
   .custom-h-cf .custom-h-col1 {
@@ -104,7 +212,7 @@ ul li svg {
       fill: black; }
     .custom-h-cf .custom-h-col2 .label-search .search-icon {
       position: absolute;
-      top: 6px;
+      top: 9px;
       left: 220px;
       z-index: 1; }
   .custom-h-cf .custom-h-col2 .custom-c2-input {
@@ -140,3 +248,68 @@ ul li svg {
     border: 2px solid #fff; }
     .custom-h-cf .custom-h-col2 .btn-sign-in:hover {
       border: 2px solid gray; }
+
+.custom-c {
+  margin-top: 120px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0 5px;
+  background-color: #fff;
+  height: 500px; }
+  .custom-c p a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-size: 13px; }
+    .custom-c p a:hover {
+      text-decoration: underline; }
+  .custom-c .avatar {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #f1f1ff;
+    border-radius: 5px;
+    border: 0.1rem solid #e4e1e1; }
+  .custom-c .avatar-p1 {
+    font-weight: 500;
+    font-size: 20px; }
+  .custom-c .avatar-p2 {
+    width: 130px;
+    padding: 2px;
+    font-size: 13px;
+    opacity: 0.7; }
+    .custom-c .avatar-p2:hover {
+      background-color: #dddada;
+      border: 1px solid #b3b3b3;
+      border-radius: 5px; }
+  .custom-c .starbadge span {
+    border: 1px solid #cecccc;
+    padding: 2px; }
+  .custom-c .starbadge .badge1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    .custom-c .starbadge .badge1:hover {
+      border: 2px solid gray; }
+  .custom-c .starbadge .badge2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .custom-c .starbadge .badge2:hover {
+      border: 2px solid gray; }
+
+.projectststas li {
+  margin-right: 20px; }
+
+.isidepstats a {
+  text-decoration: none;
+  font-size: 14px; }
+  .isidepstats a:hover {
+    text-decoration: underline; }
+
+@media screen and (max-width: 600px) {
+  .avatarsec {
+    flex-direction: column;
+    align-items: flex-start; } }

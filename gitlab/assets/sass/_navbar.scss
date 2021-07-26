@@ -1,4 +1,6 @@
 .custom-h-cf{
+    position: fixed;
+    top: 0;
     height: 40px;
     background-color: #292961;
     .custom-h-col1{
@@ -38,7 +40,7 @@
             
             .search-icon{
                 position: absolute;
-                top: 6px;
+                top: 9px;
                 left: 220px;
                 z-index: 1;
             }
@@ -93,4 +95,6 @@
 
     }
 }
+
+
 
