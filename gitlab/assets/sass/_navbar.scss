@@ -96,5 +96,18 @@
     }
 }
 
+@media screen and (max-width:578px) {
+    .btn-sign-in{
+        display: none;
+    }
+
+    .search-icon{
+        display: none;
+    }
+    .question-icon{
+        display: none;
+    }
+}
+
 
 

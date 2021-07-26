@@ -249,6 +249,14 @@ ul li svg {
     .custom-h-cf .custom-h-col2 .btn-sign-in:hover {
       border: 2px solid gray; }
 
+@media screen and (max-width: 578px) {
+  .btn-sign-in {
+    display: none; }
+  .search-icon {
+    display: none; }
+  .question-icon {
+    display: none; } }
+
 .custom-c {
   margin-top: 120px;
   width: 1000px;
@@ -313,3 +321,84 @@ ul li svg {
   .avatarsec {
     flex-direction: column;
     align-items: flex-start; } }
+
+.codestats .js {
+  height: 8px;
+  background-color: #c3c32a;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 2px; }
+
+.codestats .css {
+  height: 8px;
+  background-color: #4b04a7;
+  margin-right: 2px; }
+
+.codestats .docker {
+  height: 8px;
+  background-color: #08db3d;
+  margin-right: 2px; }
+
+.codestats .hmtl {
+  height: 8px;
+  background-color: #f04b0a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.leftpart button {
+  height: 35px;
+  padding: 2px;
+  border: 0.1rem solid #dbd8d8;
+  background-color: #fff;
+  border-radius: 5px;
+  color: black;
+  opacity: 0.9; }
+  .leftpart button:hover {
+    border: 0.1rem solid #c3c0c0; }
+
+.leftpart svg {
+  opacity: 0.7; }
+
+.leftpart a {
+  margin-left: 10px;
+  height: 35px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center; }
+
+.rigthpart a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  border: 0.1rem solid #c3c1c1;
+  padding: 2px;
+  border-radius: 5px;
+  margin-right: 5px; }
+  .rigthpart a:hover {
+    border: 0.1rem solid #908e8e;
+    color: black; }
+
+.download {
+  text-decoration: none;
+  padding: 3px;
+  border: 0.1rem solid #c3c1c1;
+  border-radius: 5px;
+  padding-left: 2px;
+  margin-right: 5px; }
+  .download:hover {
+    border: 0.1rem solid #908e8e;
+    color: black; }
+
+.clone {
+  text-decoration: none;
+  padding: 2px;
+  border: 0.1rem solid #c3c1c1;
+  border-radius: 5px;
+  padding-left: 4px;
+  background-color: #4242ad;
+  color: #c8bfbf;
+  outline: none; }
+  .clone:hover {
+    border: 0.1rem solid #908e8e;
+    color: white; }
