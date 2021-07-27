@@ -402,3 +402,88 @@ ul li svg {
   .clone:hover {
     border: 0.1rem solid #908e8e;
     color: white; }
+
+@media screen and (max-width: 1200px) {
+  .rigthpart a {
+    margin-bottom: 5px; } }
+
+.template {
+  border: 0.1rem solid #cac8c8;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(207, 204, 204, 0.157);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .template span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  .template .infotemplate {
+    margin-left: 10px; }
+    .template .infotemplate a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500; }
+      .template .infotemplate a:hover {
+        text-decoration: underline;
+        color: blue; }
+    .template .infotemplate .dots svg {
+      margin-left: 5px;
+      border: 0.1rem solid #c8c5c5;
+      border-radius: 3px; }
+      .template .infotemplate .dots svghover:hover {
+        border: 0.1rem solid #aaa7a7;
+        fill: black; }
+    .template .infotemplate button {
+      height: 1rem;
+      width: 1rem; }
+    .template .infotemplate span {
+      opacity: 0.8; }
+  .template .badgeleft-t span {
+    padding: 2px;
+    border: 0.1rem solid #c8c5c5;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; }
+  .template .badgeleft-t .custom-s-s {
+    padding: 2px;
+    border: 0.1rem solid #c8c5c5;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; }
+    .template .badgeleft-t .custom-s-s:hover {
+      border: 0.1rem solid #797676; }
+
+.readmee {
+  margin-top: 25px; }
+  .readmee a {
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+    border: 0.1rem solid #c3c0c0;
+    border-radius: 5px;
+    margin-right: 5px; }
+    .readmee a:hover {
+      border: 0.1rem solid #a19f9f; }
+
+.filessection {
+  margin-top: 20px; }
+  .filessection .customnames {
+    padding: 8px;
+    border: 0.1rem solid #dbd8d8; }
+    .filessection .customnames a {
+      text-decoration: none;
+      color: black; }
+      .filessection .customnames a:hover {
+        text-decoration: underline; }
+    .filessection .customnames .linkfiles {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0.7; }
+  .filessection .customname {
+    padding: 8px;
+    background-color: rgba(206, 198, 198, 0.37);
+    border: 0.1rem solid #dbd8d8; }

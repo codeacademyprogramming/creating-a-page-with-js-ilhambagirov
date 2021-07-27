@@ -8,6 +8,9 @@ let rightbtnSVG='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
 let spaninsideBtn=document.querySelector('.insidebtn');
 let Sideb=document.querySelector('.sideb');
 
+let links=Array.from(document.querySelectorAll('.linkfiless'));
+let col6s=Array.from(document.querySelectorAll('row .customcol6'));
+
 function checkClass(className){
     sidebar.classList.toggle('sidebarCollapse');
     sidebar.classList.toggle('sidebar-class');
@@ -58,6 +61,28 @@ mql2.addEventListener( "change", (e) => {
     sidebar.style.display='block'
     Sideb.style.display='block'
   }
+})
+
+var mql3 = window.matchMedia('(max-width: 1000px)');
+
+mql3.addEventListener( "change", (e) => {
+  if (e.matches) {
+    links.forEach(element=>{
+      element.style.display='none'
+    })
+    // col6s.forEach(cols=>{
+    //   cols.classList.toggle('col-6')
+    //   cols.classList.toggle('col3')
+    // })
+}else{
+  links.forEach(element=>{
+    element.style.display='block'
+  })
+  // col6s.forEach(cols=>{
+  //   cols.classList.toggle('col3')
+  //   cols.classList.toggle('col-6')
+  // })
+}
 })
 
 
