@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.body {
+  height: 100%;
+  background-color: #2be2e2; }
+  .body .container {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px; }
+    .body .container .done {
+      text-decoration: line-through; }
+    .body .container .tasks {
+      display: none;
+      background-color: #fff;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 30px 30px; }
+      .body .container .tasks li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid rgba(160, 159, 159, 0.582);
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .body .container .tasks li .valueWrapper {
+          display: flex;
+          width: 15%;
+          justify-content: space-between; }
+        .body .container .tasks li .btnWrapper {
+          display: flex;
+          width: 15%;
+          justify-content: space-between; }
+          .body .container .tasks li .btnWrapper .delete {
+            width: 90%;
+            padding: 2px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            height: 25px;
+            background-color: #f00606;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2px; }
+          .body .container .tasks li .btnWrapper .edit {
+            width: 90%;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            height: 25px;
+            background-color: #ff8c09;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 2px; }
+  .body .todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 30px; }
+    .body .todo .save {
+      display: none; }
+    .body .todo .saveDisabled {
+      background-color: #9ca4a5; }
+    .body .todo input {
+      width: 75%;
+      height: 55px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      border-radius: 5px;
+      color: black;
+      padding: 11px;
+      border: 1px solid black;
+      outline: none; }
+      .body .todo input:focus {
+        border-color: #1ec8df; }
+    .body .todo button {
+      width: 10%;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      height: 55px;
+      background-color: #1ec8df;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif; }
