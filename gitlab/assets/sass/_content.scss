@@ -1,0 +1,319 @@
+.custom-c{
+    margin-top: 120px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 0 5px;
+    background-color: #fff;
+    height: 500px;
+    p a{
+        text-decoration: none;
+        color: black;
+        opacity: 0.7;
+        font-size: 13px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .avatar{
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px; 
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color:#f1f1ff;
+        border-radius:5px;
+        border: 0.1rem solid rgb(228, 225, 225);
+
+        
+    }
+
+    .avatar-p1{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .avatar-p2{
+        width: 130px;
+        padding: 2px;
+        font-size: 13px;
+        opacity: 0.7;
+        &:hover{
+            background-color: rgb(221, 218, 218);
+            border: 1px solid rgb(179, 179, 179) ;
+            border-radius: 5px;
+        }
+    }
+    .starbadge span{
+        border: 1px solid rgb(206, 204, 204); padding: 2px;
+
+    }
+
+    .starbadge .badge1{
+        border-top-left-radius: 5px;border-bottom-left-radius: 5px;
+        &:hover{
+            border: 2px solid gray;
+        }
+    }
+    .starbadge .badge2{
+        border-top-right-radius: 5px;border-bottom-right-radius: 5px;
+        &:hover{
+            border: 2px solid gray;
+        }
+    }
+}
+.projectststas li{
+    margin-right: 20px;
+}
+
+.isidepstats a{
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+    }
+
+@media screen and (max-width:600px) {
+    .avatarsec{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.codestats{
+    .js{
+        height: 8px;
+        background-color: rgb(195, 195, 42);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-right: 2px;
+    }
+
+    .css{
+        height: 8px;
+        background-color: rgb(75, 4, 167);
+        margin-right: 2px;
+    }
+
+    .docker{
+        height: 8px;
+        background-color: rgb(8, 219, 61);
+        margin-right: 2px;
+    }
+
+    .hmtl{
+        height: 8px;
+        background-color: rgb(240, 75, 10);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+}
+
+.leftpart button{
+    height: 35px;
+    padding: 2px;
+    border: 0.1rem solid rgb(219, 216, 216);
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    opacity: 0.9;
+    &:hover{
+        border: 0.1rem solid rgb(195, 192, 192);
+    }
+}
+
+.leftpart svg{
+    opacity: 0.7;
+}
+
+.leftpart a{
+    margin-left: 10px;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.rigthpart{
+     a{
+        text-decoration: none;
+        color: black;
+        opacity: 0.9;
+        border: 0.1rem solid rgb(195, 193, 193);
+        padding: 2px;
+        border-radius: 5px;
+        margin-right: 5px;
+
+        &:hover{
+            border: 0.1rem solid rgb(144, 142, 142);
+            color: black;
+        }
+    }
+    }
+
+    .download{
+        text-decoration: none;
+        padding: 3px;
+        border: 0.1rem solid rgb(195, 193, 193);
+        border-radius: 5px;
+        padding-left: 2px;
+        margin-right: 5px;
+        &:hover{
+            border: 0.1rem solid rgb(144, 142, 142);
+            color: black;
+        }
+    }
+    .clone{
+        text-decoration: none;
+        padding: 2px;
+        border: 0.1rem solid rgb(195, 193, 193);
+        border-radius: 5px;
+        padding-left: 4px;
+        background-color: rgb(66, 66, 173);
+        color: rgb(200, 191, 191);
+        outline: none;
+        &:hover{
+            border: 0.1rem solid rgb(144, 142, 142);
+            color: white;
+        }
+        
+        
+    
+    }
+
+
+    
+@media screen and (max-width:1200px) {
+    .rigthpart{
+        a{
+            margin-bottom: 5px;
+        }
+    }
+}
+.template{
+    border: 0.1rem solid rgb(202, 200, 200);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(207, 204, 204, 0.157);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    span img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .infotemplate{
+        margin-left: 10px;
+        a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+
+        &:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        
+
+       }
+
+       .dots svg{
+           margin-left: 5px;
+           border: 0.1rem solid rgb(200, 197, 197);
+           border-radius: 3px;
+
+           &hover:hover{
+            border: 0.1rem solid rgb(170, 167, 167);
+            fill: black;
+           }
+       }
+       button{
+            height: 1rem;
+            width: 1rem;
+        }
+       span{
+           opacity: 0.8;
+       }
+    }
+
+    .badgeleft-t {
+         span{
+        padding: 2px;
+        border: 0.1rem solid rgb(200, 197, 197);
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+
+    }
+    .custom-s-s{
+        padding: 2px;
+        border: 0.1rem solid rgb(200, 197, 197);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+
+        &:hover{
+            border: 0.1rem solid rgb(121, 118, 118);
+        }
+
+    }
+    }
+    
+   
+     
+}
+
+.readmee{
+    margin-top: 25px;
+    a{
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+    border: 0.1rem solid rgb(195, 192, 192);
+    border-radius: 5px;
+    margin-right: 5px;
+    &:hover{
+        border: 0.1rem solid rgb(161, 159, 159);
+    }
+}
+}
+
+.filessection{
+    margin-top: 20px;
+  
+
+    .customnames{
+        padding: 8px;
+          border: 0.1rem solid rgb(219, 216, 216);
+          a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .linkfiles{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;   
+            opacity: 0.7;
+        }
+          
+    }
+    .customname{
+        padding: 8px;
+        background-color: rgba(206, 198, 198, 0.37);
+          border: 0.1rem solid rgb(219, 216, 216);
+    }
+}
+
